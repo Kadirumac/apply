@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import  {ProductProvider } from './context';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <ProductProvider>
-    <Router basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL+ '/'}>
     <App />
-    </Router>
+    </BrowserRouter>
   </ProductProvider>,
   document.getElementById('root')
 );
