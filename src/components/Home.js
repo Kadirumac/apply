@@ -105,7 +105,7 @@ const Codes = styled.div`
 
 .fs{
     color:grey;
-    font-family:Tenor Sans;
+    font-family:Tenor Sans; 
     letter-spacing:1.5px;
     line-height:0
     
