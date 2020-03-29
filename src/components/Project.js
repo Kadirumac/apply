@@ -8,29 +8,30 @@ class Project extends Component {
     render() {
         const{id,title,img,type} = this.props.product;
         return (
-            <ProjectWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
+            <ProjectWrapper className="col-sm-11 mx-auto col-md-9 col-lg-5 my-3">
                <div className="card">
+                       
                    <ProductConsumer>
-                       {(value) =>( <div className="img-container p-5"
+                   
+                       {(value) =>( <div className="img-container p-2"
                         onClick={() =>{
                             value.handleDetail(id)
                         }}>
                     <Link to="/details">
+                        <h5 className="text-blue text-center mr-3">{title}</h5>
                         <img  src={img} alt="product" className="card-img-top"/>
+                        <div className="overlay"> See Project <p> {title} </p> </div>
+              
                     </Link>
-                    <button className="cart-btn"
-                     onClick={() =>{value.openModal(id) }}>
-                     </button>
+      
                    
                     </div>)}
                    
                     </ProductConsumer>
                     {/* card footer */}
                     <div className="card-footer d-flex justify-content-between">
-                        <p className="align-self-center mb-0">
-                            {title}
-                        </p>
-                        <h5 className="text-blue font-italic mb-0">
+         
+                        <h5 className="text-blue mb-0">
                             {type}
                          
                         </h5>
@@ -42,7 +43,7 @@ class Project extends Component {
     }
 }
 
-Product.propTypes ={
+Project.propTypes ={
     product:PropTypes.shape({
         id:PropTypes.number,
         img:PropTypes.string,
@@ -77,29 +78,33 @@ const ProjectWrapper = styled.div`
 }
 .car-img-top{
     transition:all 1s linear;
+    
 }
 .img-container:hover .card-img-top{
-    transform:scale(1.2);
+    transform:scaleX(1.2);
 }
-.cart-btn{
+.overlay{
     position:absolute;
-    bottom:0;
+    top:1;
     right:0;
+    bottom:0;
+    left:0;
     padding:0.2rem 0.4rem;
-    background:var(--lightBlue);
+    background:rgba(50, 120, 122,0.6 );
     border:none;
+    text-align:center;
+    vertical-align: middle; 
+    opacity:0.1;
+    line-height: 90px;
     color:var(--mainWhite);
     font-size:1.4rem;
-    border-radius:0.5rem 0 0 0;
-    transform:translate(100%,100%);
+
+    transform:translate(0%,-100%);
     transition:all 0.5s linear;
 }
-.img-container:hover .cart-btn{
+.img-container:hover .overlay{
     transform:translate(0,0);
-}
-.cart-btn:hover{
-    color:var(--mainBlue);
-    cursor:pointer;
+    opacity:0.8;
 }
 
  

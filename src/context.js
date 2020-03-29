@@ -1,5 +1,5 @@
 import React, { Component ,createContext} from 'react';
-import { storeProducts,detailProduct} from './data';
+import { listProjects,detailProduct,about,skills,frontEndCodes,backEndCodes,services ,languages} from './data';
 const ProductContext = createContext();
 //Provider
 //Consumer
@@ -7,17 +7,24 @@ const ProductContext = createContext();
 class ProductProvider extends Component {
     state={
         products:[],
+        about:about,
         detailProduct:detailProduct,
         modalOpen:false,
-        modalProduct:detailProduct
+        modalProduct:detailProduct,
+        backEndCodes:backEndCodes,
+        frontEndCodes:frontEndCodes,
+        services:services,
+        languages:languages,
+        skills:skills
       
-    };
+    }; 
     componentDidMount(){
         this.setProducts();
     }
+
     setProducts = () =>{
         let tempProducts = [];
-        storeProducts.forEach(item =>{
+        listProjects.forEach(item =>{
             const singleItem ={...item};
             tempProducts =[...tempProducts,singleItem]
         })

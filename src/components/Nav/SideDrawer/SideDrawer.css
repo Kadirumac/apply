@@ -1,6 +1,6 @@
 .side-drawer{
     height: 98vh;
-    background: linear-gradient(180deg, #232127 0%, rgba(217, 102, 102, 0.2652) 0.01%, rgba(0, 0, 0, 0.37) 100%), #232A34;;
+    background: linear-gradient(180deg, #25797c 0%,#25797c 0.01%, rgba(0, 0, 0, 0.37) 100%), #232A34;;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -67,6 +67,6 @@
 }
 @media (min-width: 769px){
     .side-drawer{
-        display: block;
+        display: none;
     }
 }

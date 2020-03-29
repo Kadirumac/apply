@@ -1,16 +1,16 @@
-const  particles ={ particles: {
+const  particles2 ={ particles: {
     number: {
       value: 50,
       density: {
         enable: true,
-        value_area: 400
+        value_area: 800
       }
     },
     color: {
       value: '#fff'
     },
     shape: {
-      type: 'circle',
+      type: 'star',
       stroke: {
         width: 0,
         color: '#fff'
@@ -54,7 +54,7 @@ const  particles ={ particles: {
     move: {
       enable: true,
       speed: 6,
-      direction: 'none',
+      direction: 'bottom',
       random: false,
       straight: false,
       out_mode: 'out',
@@ -114,4 +114,4 @@ const  particles ={ particles: {
   tmp: {}
 }
 
-export default particles
+export default particles2
