@@ -1,23 +1,23 @@
 export const listProjects = [
- {
-   id: 1,
-   title: "Camera Shop",
-   img: "img/formal-project.png",
-   type: "Full Stack",
-   info:
-     "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-    url:"https://formal-project-ku.netlify.com/",
-    intro:{
-      id: 1,
-      title: "Camera Shop",
-      codes: "ReactJs, ExpresJs, MongoDB , Bootstrap",
-      techs: "Context-API, Styled-Compenents,RESTful APIs",
-      start:"09.2019",
-      finish:"12.2019",
-      intro:"This project is developed for Front-end by DCI(Digital Career Institute).I have experienced agile project management  tecniques.   I have learned in tis project Context API"
-   
-     }
-  },
+  {
+    id: 1,
+    title: "Camera Shop",
+    img: "img/formal-project.png",
+    type: "Full Stack",
+    info:
+      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+     url:"https://formal-project-ku.netlify.com/",
+     intro:{
+       id: 1,
+       title: "Camera Shop",
+       codes: "ReactJs, ExpresJs, MongoDB , Bootstrap",
+       techs: "Context-API, Styled-Compenents,RESTful APIs",
+       start:"01.09.2019",
+       finish:"22.12.2019",
+       intro:"This project is a Full Stack project developed by DCI(Digital Career Institute) students.I have experienced agile project management  tecniques and state management with Context API"
+    
+      }
+   },
  {
      id: 2,
      title: "Chat-App",

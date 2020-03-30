@@ -10,7 +10,7 @@ class Details extends Component {
            <ProductConsumer>
                {(value) =>{
                   const {id,img,info,title,type,url,intro} = value.detailProduct;         
-                  console.log(intro);
+       
                   
                   return(
                       <div className="container py-5">
@@ -33,12 +33,12 @@ class Details extends Component {
                                      <InfoWrapper>
                                          <h3>{intro.title}</h3>
                                      <ul className="list">
-                                        <li>Project Type : {type} </li>
-                                        <li>Coded with : {intro.codes}</li>
-                                        <li>Technologies used : {intro.techs}</li>
-                                        <li>Start date :  {intro.start} </li>
-                                        <li>Start date :  {intro.finish}</li>
-                                        <li>Desription  :{intro.intro}</li>
+                                        <li>Project Type : <br/>{type} </li>
+                                        <li>Coded with : <br/>{intro.codes}</li>
+                                        <li>Technologies used :<br/> {intro.techs}</li>
+                                        <li>Start date :<br/>  {intro.start} </li>
+                                        <li>Finish date : <br/> {intro.finish}</li>
+                                        <li>Desription  :<br/>{intro.intro}</li>
                                     </ul>
                             
                                    
