@@ -36,7 +36,7 @@ class Skills extends Component {
                              </div>       
                       </div>  
                       
-                        )
+                        ) 
                     }}
                                     
                        </ProductConsumer>            

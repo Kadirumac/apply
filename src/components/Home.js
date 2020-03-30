@@ -14,7 +14,7 @@ class Home extends Component {
         return (
             <React.Fragment>
                 <Codes>
-             <div className="py-2">
+
             
         
                 <div className="container">
@@ -82,7 +82,7 @@ class Home extends Component {
                 
                     </div>
                 </div>
-             </div>
+       
              </Codes>
             </React.Fragment>
         );
@@ -98,7 +98,7 @@ const Codes = styled.div`
 .skills{ 
     background: transparent;
     font-family:Tenor Sans;
-    margin:4% 1%;
+    margin:4% 0;
     padding:2% 0;
 
 }

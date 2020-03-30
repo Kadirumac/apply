@@ -11,7 +11,7 @@ class About extends Component {
                   const {id,img,info,title,type} =
                   value.about;
                   let newText = info.split('\n').map((item, i) => {
-                    return <li key={i} className="text-lowercase">{item}</li>;
+                    return   <li key={i}>{item}</li>;
                     });
                   return(
                       <div className="container py-5">
@@ -35,10 +35,12 @@ class About extends Component {
                                      <h4 className="text-blue">
                                      </h4>
                                    
-                                             <Text>
-                                                 <ul className="me">
-                                                 {newText}
-                                                </ul>  </Text>
+                                            <Text>
+                                                <ul>
+                                                <li className="me"> {newText}</li>
+                                                </ul>
+                                             
+                                             </Text> 
                                       
                      
                                      {/* button */}
@@ -65,7 +67,7 @@ class About extends Component {
 export default About;
 
 
-const Text = styled.p`
+const Text = styled.div`
 .me{
     font-family:Tenor Sans;
     font-size:1.2em;
