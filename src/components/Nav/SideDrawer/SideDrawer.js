@@ -15,10 +15,10 @@ const SideDrawer = props => {
         <div className={drawerClasses}>
             <span  > </span>
   
-            <Link href="/about"className="bigA">About</Link>  
-            <Link href="/project" className="bigA">Projects</Link>
-            <Link href="/contact"className="bigA">Contact</Link>
-            <Link href="/">Home</Link>
+            <Link to="/about"className="bigA">About</Link>  
+            <Link to="/project" className="bigA">Projects</Link>
+            <Link to="/contact"className="bigA">Contact</Link>
+            <Link to="/">Home</Link>
             
                       
         </div>
