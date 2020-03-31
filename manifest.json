@@ -1,19 +1,19 @@
 {
-  "short_name": "Kadir Umac",
-  "name": "Full Stack Developer",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
-      "src": "https://cdn4.iconfinder.com/data/icons/web-development-5/500/developer-api-coding-screen-512.png",
+      "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "https://cdn4.iconfinder.com/data/icons/web-development-5/500/developer-api-coding-screen-512.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "https://cdn4.iconfinder.com/data/icons/web-development-5/500/developer-api-coding-screen-512.png",
+      "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
