@@ -29,7 +29,7 @@ class About extends Component {
                                 <img  src={img} className="img-fluid" alt="product"/>
                             </div>
                             {/* product text */}
-                            <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
+                            <div className="col-10 mx-auto col-md-6 my-3 ">
                                  <h2 className="mb-4 text-center">  {type}</h2>
                              
                                      <h4 className="text-blue">
