@@ -52,8 +52,7 @@ class Contact extends Component {
                         <ul> 
                             <li className=" adress p-2">
                         
-                                    Ritter-von-halt-Str.
-                                    36/42477, Radevormwald
+                                   42477, Radevormwald
                                     Germany
                             </li>
                             <li className=" tel p-2">
