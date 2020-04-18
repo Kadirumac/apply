@@ -39,7 +39,7 @@ Services.propTypes ={
 
 const ProjectWrapper = styled.div`
 .head{
-    color:#1D786D;
+    color:var(--mainBlue);
 }
 .card{
     border-color:transparent;
