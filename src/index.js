@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <ProductProvider>
+
     <BrowserRouter basename={process.env.PUBLIC_URL+ '/'}>
     <App />
     </BrowserRouter>

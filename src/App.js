@@ -19,8 +19,10 @@ class App extends Component{
           <React.Fragment>
           <Navbar/>
           <Switch>
+        
           <Route exact path="/" component={Home} ></Route>
-            <Route exact path="/project"  component={ProjectList}></Route>
+          <Route exact path={`${process.env.PUBLIC_URL}/project`} component={ProjectList}/>
+            {/* <Route exact path="/project"  component={ProjectList}></Route> */}
             <Route exact path="/details" component={Details}></Route>
             <Route exact path="/about" component={About} ></Route>
             <Route exact path="/contact" component={Contact} ></Route>
