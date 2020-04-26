@@ -5,7 +5,7 @@ import Title from './Title';
 import {ProductConsumer} from '../context';
 import Particles from 'react-particles-js';
 import styled from 'styled-components';
-import particles2 from '../particles2';
+import Refraction from '../demos/Refraction';
 
 class Home extends Component {
  
@@ -13,16 +13,19 @@ class Home extends Component {
        
         return (
             <React.Fragment>
+
+                 
+                
                 <Codes>
 
+                  <Refraction />
             
-        
                 <div className="container">
        
                      <div className="row">
                         <div className="col-10 mx-auto my-2 text-center text-title">
                             
-                                <h5 className="text-lowercase mr-5 fs ">
+                                <h5 className="text-lowercase mr-5 my-3 fs ">
                                     <strong >Full Stack Developer</strong>  
                                 </h5>
                         </div>
@@ -68,9 +71,9 @@ class Home extends Component {
                        
                         <ProductConsumer>
                         { (value) =>{
-                            return value.languages.map( skill =>{
+                            return value.languages.map( (skill,index) =>{
                                 return(
-                                    <div>
+                                    <div key={index}>
                                  
                                     <Skills label
                                  key={skill.id }

@@ -47,8 +47,8 @@ class Contact extends Component {
                             </ul>
                          
                         </div>
-                     <div className="col-lg-5 col-md-8 col-sm-10  mt-5 pt-3 mx-auto card" bg="info">
-                        <h5 className="text-capitalize text-center text-light">my address</h5>
+                     <div className="col-lg-5 col-md-8 col-sm-10  my-5 py-5 mx-auto card" bg="info">
+                        <h5 className="text-capitalize text-center text-light ">my address</h5>
                         <ul> 
                             <li className=" adress p-2">
                         
